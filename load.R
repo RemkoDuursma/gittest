@@ -10,13 +10,6 @@ Library(stringr)  # str_trim
 Library(Hmisc)    # approxExtrap
 
 
-if(packageVersion('HIEv') < '0.8')
-  stop("Please update the HIEv package!")
-
-# set path for HIEv
-if(!file.exists("cache"))dir.create("cache")
-setToPath("cache")
-
 # Load all functions
 source("R/data_processing.R")
 source("R/data_define.R")
